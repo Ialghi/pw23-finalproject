@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/CSS/Form Page/Kontak.css">
+    <link rel="stylesheet" href="../asset/CSS/navbar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../asset/img/logo 3.png" rel="shortcut icon">
+    <title>NFwisata | kontak</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../asset/img/logo w.png" alt="">
+            </a>
+            <ul class="navbar">
+                <p class="menu">Menu</p>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../List Page/List.html">Destinasi wisata</a></li>
+                <li><a href="../Gallery page/Gallery.html">Event</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+            <ul class="log-reg">
+                <i class='bx bx-search'></i>
+                <li><a href="../Login & Register/login.html" class="btn-log">Login</a></li>
+                <li><a href="../Login & Register/register.html" class="btn-reg">Register</a></li>
+                <i class='bx bx-menu' id="menu-icon"></i>
+            </ul>
+            
+        </nav>
+    </header>
+    <div>
+        <br>
+    </div>
+    <div class="container">
+        <h1>Hubungi kami</h1>
+        <form id="hubungi-kami">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required placeholder="Masukankan Nama Anda">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Masukankan email Anda">
+
+            <label for="noTelpon">Nomor Telepon:</label>
+            <input type="tel" id="noTelpon" name="noTelpon" pattern="[0-9]{10}" placeholder="Masukankan no Telpon Anda" required>
+
+            <label for="Pesan">Pesan:</label>
+            <textarea id="Pesan" name="Pesan" rows="4" required placeholder="Tulis Pesan Anda"></textarea>
+
+            <button type="button" onclick="submitForm()">Kirim</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 NFwisata</p>
+    </footer>
+    <script src="../asset/Js/Form Page/Form.js"></script>
+    <script src="../asset/Js/main.js"></script>
+</body>
+</html>
+
