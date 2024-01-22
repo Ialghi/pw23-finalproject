@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
+    --main-color: #fff;
+    --sec-color: #ebeaea;
+    --thd-color: #cacaca;
+}
+html, body{
+    height: 100%;
+}
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    width: 210px;
+    margin-bottom: 15px;
+
+}
+.box{
+    width: 30rem;
+    height: auto;
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 20px;
+}
+.box h1{
+    padding: 10px;
+    text-align: center;
+}
+#username, #password{
+    width: 27rem;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 0.3rem;
+    border: 1px solid var(--thd-color);
+}
+.cek-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.btn-lp{
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #4d0194;
+}
+.btn-lp:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+label{
+    text-align: left;
+    width: 95%;
+    margin: 0 5px;
+    padding-left: 0 5px;
+}
+#cek{
+    margin-left: 10px;
+}
+.msk-btn{
+    width: 10rem;
+    padding: 0.4rem;
+    border: 1px solid var(--thd-color);
+    border-radius: 0.3rem;
+    margin: 2rem;
+    margin-bottom: 8rem;
+    background-color: var(--sec-color);
+}
+.msk-btn:hover{
+    cursor: pointer;
+    background-color: var(--thd-color); 
+    transition: 0.2s all linear;
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+.alert{
+    font-size: 13px;
+    color: #ff0000;
+}
+/* Media queries */
+@media (max-width: 555px){
+    .box{
+        width: 20rem;
+    }
+    #username, #password{
+        width: 100%;
+    }
+    .footer{
+        font-size: 0.5rem;
+    }
+}
