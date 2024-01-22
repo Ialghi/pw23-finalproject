@@ -167,4 +167,10 @@ nav.shadow{
         border-radius:0.2rem;
         box-shadow: var(--box-shadow);
     }
+    .navbar li{
+        padding-left: 12px;
+    }
+    .navbar li a{
+        margin: 0;
+    }
 }
